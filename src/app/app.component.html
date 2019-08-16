@@ -1,0 +1,15 @@
+<h2>{{pageTitle}}</h2>
+<div>
+  <input type="text" [(ngModel)]="name">
+  Walcome : {{name}}
+</div>
+<br>
+<div>
+  <input type="text" [ngModel]="useName" (ngModelChange)="changeModel($event)">
+  Walcome : {{userName}}
+</div>
+<br>
+<div>
+  <input type="text" #nameRef [(ngModel)]="custNameChange">
+  Walcome : {{custNameChange}}
+</div>
